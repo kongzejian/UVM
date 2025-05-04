@@ -8,6 +8,10 @@ import uvm_pkg::*;
 `include "my_transaction.sv"
 `include "my_if.sv"
 `include "my_driver.sv"
+`include "my_monitor.sv"
+`include "my_agent.sv"
+`include "my_model.sv"
+`include "my_scoreboard.sv"
 `include "my_env.sv"
 
 
@@ -35,7 +39,9 @@ initial begin
 end
 
 initial begin
-   uvm_config_db # (virtual my_if)::set(null, "uvm_test_top.drv", "vif", input_if);
+   uvm_config_db # (virtual my_if)::set(null, "uvm_test_top.i_agt.drv", "vif", input_if);
+   uvm_config_db # (virtual my_if)::set(null, "uvm_test_top.i_agt.mon", "vif", input_if);
+   uvm_config_db # (virtual my_if)::set(null, "uvm_test_top.o_agt.mon", "vif", output_if);
 end
 
 initial begin

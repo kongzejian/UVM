@@ -10,7 +10,6 @@ Warning-[LCA_FEATURES_ENABLED] Usage warning
 make[1]: Entering directory '/afs/ece.cmu.edu/usr/zejiank/Private/UVM/UVM/ch2/csrc'
 make[1]: Leaving directory '/afs/ece.cmu.edu/usr/zejiank/Private/UVM/UVM/ch2/csrc'
 make[1]: Entering directory '/afs/ece.cmu.edu/usr/zejiank/Private/UVM/UVM/ch2/csrc'
-g++ -w  -pipe -DVCSMX -DUVM_DPI_DO_TYPE_CHECK -fPIC -O -I/afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/include    -c /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/etc/uvm-1.2/dpi/uvm_dpi.cc
 ld -shared  -Bsymbolic --no-relax  -o .//../simv.daidir//_cuarc0.so objs/amcQw_d.o 
 rm -f _cuarc0.so
 ../simv up to date
@@ -19,7 +18,7 @@ Verdi KDB elaboration done and the database successfully generated: 0 error(s), 
 ./simv -l sim.log +UVM_VERDI_TRACE=UVM_AWARE+HIER+RAL+COMPWAVE 
 Chronologic VCS simulator copyright 1991-2022
 Contains Synopsys proprietary information.
-Compiler version T-2022.06_Full64; Runtime version T-2022.06_Full64;  Apr 24 00:23 2025
+Compiler version T-2022.06_Full64; Runtime version T-2022.06_Full64;  May  3 20:15 2025
 UVM_INFO /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/etc/uvm-1.2/base/uvm_root.svh(402) @ 0: reporter [UVM/RELNOTES] 
 ----------------------------------------------------------------
 UVM-1.2.Synopsys
@@ -46,28 +45,149 @@ UVM_INFO /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2
 UVM_INFO /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/etc/uvm-1.2/base/uvm_resource_db.svh(121) @ 0: reporter [CFGDB/GET] Configuration 'uvm_test_top.recording_detail' (type logic signed[4095:0]) read by uvm_test_top = null (failed lookup)
 UVM_INFO /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/etc/uvm-1.2/base/uvm_resource_db.svh(121) @ 0: reporter [CFGDB/GET] Configuration 'uvm_test_top.recording_detail' (type int) read by uvm_test_top = null (failed lookup)
 UVM_INFO @ 0: reporter [RNTST] Running test my_env...
-UVM_INFO /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/etc/uvm-1.2/base/uvm_resource_db.svh(121) @ 0: reporter [CFGDB/SET] Configuration 'uvm_test_top.drv.vif' (type virtual interface my_if) set by  = (virtual interface my_if) top_tb.input_if : '{clk:'hx, rst_n:'hx, data:'hxx, valid:'hx}
+UVM_INFO /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/etc/uvm-1.2/base/uvm_resource_db.svh(121) @ 0: reporter [CFGDB/SET] Configuration 'uvm_test_top.i_agt.drv.vif' (type virtual interface my_if) set by  = (virtual interface my_if) top_tb.input_if : '{clk:'hx, rst_n:'hx, data:'hxx, valid:'hx}
+UVM_INFO /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/etc/uvm-1.2/base/uvm_resource_db.svh(121) @ 0: reporter [CFGDB/SET] Configuration 'uvm_test_top.i_agt.mon.vif' (type virtual interface my_if) set by  = (virtual interface my_if) top_tb.input_if : '{clk:'hx, rst_n:'hx, data:'hxx, valid:'hx}
+UVM_INFO /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/etc/uvm-1.2/base/uvm_resource_db.svh(121) @ 0: reporter [CFGDB/SET] Configuration 'uvm_test_top.o_agt.mon.vif' (type virtual interface my_if) set by  = (virtual interface my_if) top_tb.output_if : '{clk:'hx, rst_n:'hx, data:'hxx, valid:'hx}
 UVM_INFO /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/etc/uvm-1.2/base/uvm_phase.svh(1351) @ 0: reporter [PH/TRC/STRT] Phase 'common' (id=188) Starting phase
 UVM_INFO /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/etc/uvm-1.2/base/uvm_phase.svh(1626) @ 0: reporter [PH/TRC/DONE] Phase 'common' (id=188) Completed phase
 UVM_INFO /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/etc/uvm-1.2/base/uvm_phase.svh(1661) @ 0: reporter [PH/TRC/SCHEDULED] Phase 'common.build' (id=191) Scheduled from phase common
 UVM_INFO /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/etc/uvm-1.2/base/uvm_phase.svh(1351) @ 0: reporter [PH/TRC/STRT] Phase 'common.build' (id=191) Starting phase
-UVM_INFO /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/etc/uvm-1.2/base/uvm_component.svh(1873) @ 0: drv [SNPS_COMP_TRACE] label:Creating drv name:drv full_name:uvm_test_top.drv type_name:my_driver full_type_name:my_driver
-UVM_INFO /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/etc/uvm-1.2/base/uvm_resource_db.svh(121) @ 0: reporter [CFGDB/GET] Configuration 'uvm_test_top.drv.recording_detail' (type logic signed[4095:0]) read by uvm_test_top.drv = null (failed lookup)
-UVM_INFO /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/etc/uvm-1.2/base/uvm_resource_db.svh(121) @ 0: reporter [CFGDB/GET] Configuration 'uvm_test_top.drv.recording_detail' (type int) read by uvm_test_top.drv = null (failed lookup)
-UVM_INFO /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/etc/uvm-1.2/base/uvm_resource_db.svh(121) @ 0: reporter [CFGDB/GET] Configuration 'uvm_test_top.drv.seq_item_port.recording_detail' (type logic signed[4095:0]) read by uvm_test_top.drv.seq_item_port = null (failed lookup)
-UVM_INFO /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/etc/uvm-1.2/base/uvm_resource_db.svh(121) @ 0: reporter [CFGDB/GET] Configuration 'uvm_test_top.drv.seq_item_port.recording_detail' (type int) read by uvm_test_top.drv.seq_item_port = null (failed lookup)
-UVM_INFO /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/etc/uvm-1.2/base/uvm_resource_db.svh(121) @ 0: reporter [CFGDB/GET] Configuration 'uvm_test_top.drv.seq_item_port.check_connection_relationships' (type logic signed[4095:0]) read by uvm_test_top.drv.seq_item_port = null (failed lookup)
-UVM_INFO /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/etc/uvm-1.2/base/uvm_port_base.svh(257) @ 0: reporter [SNPS_PORT_TRACE] label:Creating seq_item_port name:seq_item_port full_name:uvm_test_top.drv.seq_item_port type_name:uvm_seq_item_pull_port full_type_name:uvm_seq_item_pull_port
-UVM_INFO /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/etc/uvm-1.2/base/uvm_resource_db.svh(121) @ 0: reporter [CFGDB/GET] Configuration 'uvm_test_top.drv.rsp_port.recording_detail' (type logic signed[4095:0]) read by uvm_test_top.drv.rsp_port = null (failed lookup)
-UVM_INFO /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/etc/uvm-1.2/base/uvm_resource_db.svh(121) @ 0: reporter [CFGDB/GET] Configuration 'uvm_test_top.drv.rsp_port.recording_detail' (type int) read by uvm_test_top.drv.rsp_port = null (failed lookup)
-UVM_INFO /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/etc/uvm-1.2/base/uvm_resource_db.svh(121) @ 0: reporter [CFGDB/GET] Configuration 'uvm_test_top.drv.rsp_port.check_connection_relationships' (type logic signed[4095:0]) read by uvm_test_top.drv.rsp_port = null (failed lookup)
-UVM_INFO /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/etc/uvm-1.2/base/uvm_port_base.svh(257) @ 0: reporter [SNPS_PORT_TRACE] label:Creating rsp_port name:rsp_port full_name:uvm_test_top.drv.rsp_port type_name:uvm_analysis_port full_type_name:uvm_analysis_port
-UVM_INFO my_driver.sv(5) @ 0: uvm_test_top.drv [my_driver] new is called
-UVM_INFO my_driver.sv(11) @ 0: uvm_test_top.drv [my_driver] build_phase is called
-UVM_INFO /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/etc/uvm-1.2/base/uvm_resource_db.svh(121) @ 0: reporter [CFGDB/GET] Configuration 'uvm_test_top.drv.vif' (type virtual interface my_if) read by uvm_test_top.drv = (virtual interface my_if) top_tb.input_if : '{clk:'h0, rst_n:'h0, data:'hxx, valid:'hx}
+UVM_INFO /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/etc/uvm-1.2/base/uvm_component.svh(1873) @ 0: i_agt [SNPS_COMP_TRACE] label:Creating i_agt name:i_agt full_name:uvm_test_top.i_agt type_name:my_agent full_type_name:my_agent
+UVM_INFO /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/etc/uvm-1.2/base/uvm_resource_db.svh(121) @ 0: reporter [CFGDB/GET] Configuration 'uvm_test_top.i_agt.recording_detail' (type logic signed[4095:0]) read by uvm_test_top.i_agt = null (failed lookup)
+UVM_INFO /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/etc/uvm-1.2/base/uvm_resource_db.svh(121) @ 0: reporter [CFGDB/GET] Configuration 'uvm_test_top.i_agt.recording_detail' (type int) read by uvm_test_top.i_agt = null (failed lookup)
+UVM_INFO /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/etc/uvm-1.2/base/uvm_component.svh(1873) @ 0: o_agt [SNPS_COMP_TRACE] label:Creating o_agt name:o_agt full_name:uvm_test_top.o_agt type_name:my_agent full_type_name:my_agent
+UVM_INFO /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/etc/uvm-1.2/base/uvm_resource_db.svh(121) @ 0: reporter [CFGDB/GET] Configuration 'uvm_test_top.o_agt.recording_detail' (type logic signed[4095:0]) read by uvm_test_top.o_agt = null (failed lookup)
+UVM_INFO /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/etc/uvm-1.2/base/uvm_resource_db.svh(121) @ 0: reporter [CFGDB/GET] Configuration 'uvm_test_top.o_agt.recording_detail' (type int) read by uvm_test_top.o_agt = null (failed lookup)
+UVM_INFO /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/etc/uvm-1.2/base/uvm_component.svh(1873) @ 0: model [SNPS_COMP_TRACE] label:Creating model name:model full_name:uvm_test_top.model type_name:my_model full_type_name:my_model
+UVM_INFO /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/etc/uvm-1.2/base/uvm_resource_db.svh(121) @ 0: reporter [CFGDB/GET] Configuration 'uvm_test_top.model.recording_detail' (type logic signed[4095:0]) read by uvm_test_top.model = null (failed lookup)
+UVM_INFO /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/etc/uvm-1.2/base/uvm_resource_db.svh(121) @ 0: reporter [CFGDB/GET] Configuration 'uvm_test_top.model.recording_detail' (type int) read by uvm_test_top.model = null (failed lookup)
+UVM_INFO /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/etc/uvm-1.2/base/uvm_component.svh(1873) @ 0: agt_mdl_fifo [SNPS_COMP_TRACE] label:Creating agt_mdl_fifo name:agt_mdl_fifo full_name:uvm_test_top.agt_mdl_fifo type_name:uvm_tlm_analysis_fifo #(T) full_type_name:uvm_tlm_analysis_fifo #(T)
+UVM_INFO /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/etc/uvm-1.2/base/uvm_resource_db.svh(121) @ 0: reporter [CFGDB/GET] Configuration 'uvm_test_top.agt_mdl_fifo.recording_detail' (type logic signed[4095:0]) read by uvm_test_top.agt_mdl_fifo = null (failed lookup)
+UVM_INFO /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/etc/uvm-1.2/base/uvm_resource_db.svh(121) @ 0: reporter [CFGDB/GET] Configuration 'uvm_test_top.agt_mdl_fifo.recording_detail' (type int) read by uvm_test_top.agt_mdl_fifo = null (failed lookup)
+UVM_INFO /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/etc/uvm-1.2/base/uvm_resource_db.svh(121) @ 0: reporter [CFGDB/GET] Configuration 'uvm_test_top.agt_mdl_fifo.put_export.recording_detail' (type logic signed[4095:0]) read by uvm_test_top.agt_mdl_fifo.put_export = null (failed lookup)
+UVM_INFO /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/etc/uvm-1.2/base/uvm_resource_db.svh(121) @ 0: reporter [CFGDB/GET] Configuration 'uvm_test_top.agt_mdl_fifo.put_export.recording_detail' (type int) read by uvm_test_top.agt_mdl_fifo.put_export = null (failed lookup)
+UVM_INFO /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/etc/uvm-1.2/base/uvm_resource_db.svh(121) @ 0: reporter [CFGDB/GET] Configuration 'uvm_test_top.agt_mdl_fifo.put_export.check_connection_relationships' (type logic signed[4095:0]) read by uvm_test_top.agt_mdl_fifo.put_export = null (failed lookup)
+UVM_INFO /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/etc/uvm-1.2/base/uvm_port_base.svh(257) @ 0: reporter [SNPS_PORT_TRACE] label:Creating put_export name:put_export full_name:uvm_test_top.agt_mdl_fifo.put_export type_name:uvm_put_imp full_type_name:uvm_put_imp
+UVM_INFO /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/etc/uvm-1.2/base/uvm_resource_db.svh(121) @ 0: reporter [CFGDB/GET] Configuration 'uvm_test_top.agt_mdl_fifo.get_peek_export.recording_detail' (type logic signed[4095:0]) read by uvm_test_top.agt_mdl_fifo.get_peek_export = null (failed lookup)
+UVM_INFO /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/etc/uvm-1.2/base/uvm_resource_db.svh(121) @ 0: reporter [CFGDB/GET] Configuration 'uvm_test_top.agt_mdl_fifo.get_peek_export.recording_detail' (type int) read by uvm_test_top.agt_mdl_fifo.get_peek_export = null (failed lookup)
+UVM_INFO /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/etc/uvm-1.2/base/uvm_resource_db.svh(121) @ 0: reporter [CFGDB/GET] Configuration 'uvm_test_top.agt_mdl_fifo.get_peek_export.check_connection_relationships' (type logic signed[4095:0]) read by uvm_test_top.agt_mdl_fifo.get_peek_export = null (failed lookup)
+UVM_INFO /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/etc/uvm-1.2/base/uvm_port_base.svh(257) @ 0: reporter [SNPS_PORT_TRACE] label:Creating get_peek_export name:get_peek_export full_name:uvm_test_top.agt_mdl_fifo.get_peek_export type_name:uvm_get_peek_imp full_type_name:uvm_get_peek_imp
+UVM_INFO /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/etc/uvm-1.2/base/uvm_resource_db.svh(121) @ 0: reporter [CFGDB/GET] Configuration 'uvm_test_top.agt_mdl_fifo.put_ap.recording_detail' (type logic signed[4095:0]) read by uvm_test_top.agt_mdl_fifo.put_ap = null (failed lookup)
+UVM_INFO /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/etc/uvm-1.2/base/uvm_resource_db.svh(121) @ 0: reporter [CFGDB/GET] Configuration 'uvm_test_top.agt_mdl_fifo.put_ap.recording_detail' (type int) read by uvm_test_top.agt_mdl_fifo.put_ap = null (failed lookup)
+UVM_INFO /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/etc/uvm-1.2/base/uvm_resource_db.svh(121) @ 0: reporter [CFGDB/GET] Configuration 'uvm_test_top.agt_mdl_fifo.put_ap.check_connection_relationships' (type logic signed[4095:0]) read by uvm_test_top.agt_mdl_fifo.put_ap = null (failed lookup)
+UVM_INFO /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/etc/uvm-1.2/base/uvm_port_base.svh(257) @ 0: reporter [SNPS_PORT_TRACE] label:Creating put_ap name:put_ap full_name:uvm_test_top.agt_mdl_fifo.put_ap type_name:uvm_analysis_port full_type_name:uvm_analysis_port
+UVM_INFO /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/etc/uvm-1.2/base/uvm_resource_db.svh(121) @ 0: reporter [CFGDB/GET] Configuration 'uvm_test_top.agt_mdl_fifo.get_ap.recording_detail' (type logic signed[4095:0]) read by uvm_test_top.agt_mdl_fifo.get_ap = null (failed lookup)
+UVM_INFO /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/etc/uvm-1.2/base/uvm_resource_db.svh(121) @ 0: reporter [CFGDB/GET] Configuration 'uvm_test_top.agt_mdl_fifo.get_ap.recording_detail' (type int) read by uvm_test_top.agt_mdl_fifo.get_ap = null (failed lookup)
+UVM_INFO /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/etc/uvm-1.2/base/uvm_resource_db.svh(121) @ 0: reporter [CFGDB/GET] Configuration 'uvm_test_top.agt_mdl_fifo.get_ap.check_connection_relationships' (type logic signed[4095:0]) read by uvm_test_top.agt_mdl_fifo.get_ap = null (failed lookup)
+UVM_INFO /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/etc/uvm-1.2/base/uvm_port_base.svh(257) @ 0: reporter [SNPS_PORT_TRACE] label:Creating get_ap name:get_ap full_name:uvm_test_top.agt_mdl_fifo.get_ap type_name:uvm_analysis_port full_type_name:uvm_analysis_port
+UVM_INFO /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/etc/uvm-1.2/base/uvm_resource_db.svh(121) @ 0: reporter [CFGDB/GET] Configuration 'uvm_test_top.agt_mdl_fifo.analysis_export.recording_detail' (type logic signed[4095:0]) read by uvm_test_top.agt_mdl_fifo.analysis_export = null (failed lookup)
+UVM_INFO /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/etc/uvm-1.2/base/uvm_resource_db.svh(121) @ 0: reporter [CFGDB/GET] Configuration 'uvm_test_top.agt_mdl_fifo.analysis_export.recording_detail' (type int) read by uvm_test_top.agt_mdl_fifo.analysis_export = null (failed lookup)
+UVM_INFO /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/etc/uvm-1.2/base/uvm_resource_db.svh(121) @ 0: reporter [CFGDB/GET] Configuration 'uvm_test_top.agt_mdl_fifo.analysis_export.check_connection_relationships' (type logic signed[4095:0]) read by uvm_test_top.agt_mdl_fifo.analysis_export = null (failed lookup)
+UVM_INFO /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/etc/uvm-1.2/base/uvm_port_base.svh(257) @ 0: reporter [SNPS_PORT_TRACE] label:Creating analysis_export name:analysis_export full_name:uvm_test_top.agt_mdl_fifo.analysis_export type_name:uvm_analysis_imp full_type_name:uvm_analysis_imp
+UVM_INFO /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/etc/uvm-1.2/base/uvm_component.svh(1873) @ 0: agt_scb_fifo [SNPS_COMP_TRACE] label:Creating agt_scb_fifo name:agt_scb_fifo full_name:uvm_test_top.agt_scb_fifo type_name:uvm_tlm_analysis_fifo #(T) full_type_name:uvm_tlm_analysis_fifo #(T)
+UVM_INFO /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/etc/uvm-1.2/base/uvm_resource_db.svh(121) @ 0: reporter [CFGDB/GET] Configuration 'uvm_test_top.agt_scb_fifo.recording_detail' (type logic signed[4095:0]) read by uvm_test_top.agt_scb_fifo = null (failed lookup)
+UVM_INFO /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/etc/uvm-1.2/base/uvm_resource_db.svh(121) @ 0: reporter [CFGDB/GET] Configuration 'uvm_test_top.agt_scb_fifo.recording_detail' (type int) read by uvm_test_top.agt_scb_fifo = null (failed lookup)
+UVM_INFO /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/etc/uvm-1.2/base/uvm_resource_db.svh(121) @ 0: reporter [CFGDB/GET] Configuration 'uvm_test_top.agt_scb_fifo.put_export.recording_detail' (type logic signed[4095:0]) read by uvm_test_top.agt_scb_fifo.put_export = null (failed lookup)
+UVM_INFO /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/etc/uvm-1.2/base/uvm_resource_db.svh(121) @ 0: reporter [CFGDB/GET] Configuration 'uvm_test_top.agt_scb_fifo.put_export.recording_detail' (type int) read by uvm_test_top.agt_scb_fifo.put_export = null (failed lookup)
+UVM_INFO /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/etc/uvm-1.2/base/uvm_resource_db.svh(121) @ 0: reporter [CFGDB/GET] Configuration 'uvm_test_top.agt_scb_fifo.put_export.check_connection_relationships' (type logic signed[4095:0]) read by uvm_test_top.agt_scb_fifo.put_export = null (failed lookup)
+UVM_INFO /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/etc/uvm-1.2/base/uvm_port_base.svh(257) @ 0: reporter [SNPS_PORT_TRACE] label:Creating put_export name:put_export full_name:uvm_test_top.agt_scb_fifo.put_export type_name:uvm_put_imp full_type_name:uvm_put_imp
+UVM_INFO /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/etc/uvm-1.2/base/uvm_resource_db.svh(121) @ 0: reporter [CFGDB/GET] Configuration 'uvm_test_top.agt_scb_fifo.get_peek_export.recording_detail' (type logic signed[4095:0]) read by uvm_test_top.agt_scb_fifo.get_peek_export = null (failed lookup)
+UVM_INFO /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/etc/uvm-1.2/base/uvm_resource_db.svh(121) @ 0: reporter [CFGDB/GET] Configuration 'uvm_test_top.agt_scb_fifo.get_peek_export.recording_detail' (type int) read by uvm_test_top.agt_scb_fifo.get_peek_export = null (failed lookup)
+UVM_INFO /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/etc/uvm-1.2/base/uvm_resource_db.svh(121) @ 0: reporter [CFGDB/GET] Configuration 'uvm_test_top.agt_scb_fifo.get_peek_export.check_connection_relationships' (type logic signed[4095:0]) read by uvm_test_top.agt_scb_fifo.get_peek_export = null (failed lookup)
+UVM_INFO /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/etc/uvm-1.2/base/uvm_port_base.svh(257) @ 0: reporter [SNPS_PORT_TRACE] label:Creating get_peek_export name:get_peek_export full_name:uvm_test_top.agt_scb_fifo.get_peek_export type_name:uvm_get_peek_imp full_type_name:uvm_get_peek_imp
+UVM_INFO /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/etc/uvm-1.2/base/uvm_resource_db.svh(121) @ 0: reporter [CFGDB/GET] Configuration 'uvm_test_top.agt_scb_fifo.put_ap.recording_detail' (type logic signed[4095:0]) read by uvm_test_top.agt_scb_fifo.put_ap = null (failed lookup)
+UVM_INFO /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/etc/uvm-1.2/base/uvm_resource_db.svh(121) @ 0: reporter [CFGDB/GET] Configuration 'uvm_test_top.agt_scb_fifo.put_ap.recording_detail' (type int) read by uvm_test_top.agt_scb_fifo.put_ap = null (failed lookup)
+UVM_INFO /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/etc/uvm-1.2/base/uvm_resource_db.svh(121) @ 0: reporter [CFGDB/GET] Configuration 'uvm_test_top.agt_scb_fifo.put_ap.check_connection_relationships' (type logic signed[4095:0]) read by uvm_test_top.agt_scb_fifo.put_ap = null (failed lookup)
+UVM_INFO /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/etc/uvm-1.2/base/uvm_port_base.svh(257) @ 0: reporter [SNPS_PORT_TRACE] label:Creating put_ap name:put_ap full_name:uvm_test_top.agt_scb_fifo.put_ap type_name:uvm_analysis_port full_type_name:uvm_analysis_port
+UVM_INFO /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/etc/uvm-1.2/base/uvm_resource_db.svh(121) @ 0: reporter [CFGDB/GET] Configuration 'uvm_test_top.agt_scb_fifo.get_ap.recording_detail' (type logic signed[4095:0]) read by uvm_test_top.agt_scb_fifo.get_ap = null (failed lookup)
+UVM_INFO /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/etc/uvm-1.2/base/uvm_resource_db.svh(121) @ 0: reporter [CFGDB/GET] Configuration 'uvm_test_top.agt_scb_fifo.get_ap.recording_detail' (type int) read by uvm_test_top.agt_scb_fifo.get_ap = null (failed lookup)
+UVM_INFO /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/etc/uvm-1.2/base/uvm_resource_db.svh(121) @ 0: reporter [CFGDB/GET] Configuration 'uvm_test_top.agt_scb_fifo.get_ap.check_connection_relationships' (type logic signed[4095:0]) read by uvm_test_top.agt_scb_fifo.get_ap = null (failed lookup)
+UVM_INFO /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/etc/uvm-1.2/base/uvm_port_base.svh(257) @ 0: reporter [SNPS_PORT_TRACE] label:Creating get_ap name:get_ap full_name:uvm_test_top.agt_scb_fifo.get_ap type_name:uvm_analysis_port full_type_name:uvm_analysis_port
+UVM_INFO /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/etc/uvm-1.2/base/uvm_resource_db.svh(121) @ 0: reporter [CFGDB/GET] Configuration 'uvm_test_top.agt_scb_fifo.analysis_export.recording_detail' (type logic signed[4095:0]) read by uvm_test_top.agt_scb_fifo.analysis_export = null (failed lookup)
+UVM_INFO /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/etc/uvm-1.2/base/uvm_resource_db.svh(121) @ 0: reporter [CFGDB/GET] Configuration 'uvm_test_top.agt_scb_fifo.analysis_export.recording_detail' (type int) read by uvm_test_top.agt_scb_fifo.analysis_export = null (failed lookup)
+UVM_INFO /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/etc/uvm-1.2/base/uvm_resource_db.svh(121) @ 0: reporter [CFGDB/GET] Configuration 'uvm_test_top.agt_scb_fifo.analysis_export.check_connection_relationships' (type logic signed[4095:0]) read by uvm_test_top.agt_scb_fifo.analysis_export = null (failed lookup)
+UVM_INFO /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/etc/uvm-1.2/base/uvm_port_base.svh(257) @ 0: reporter [SNPS_PORT_TRACE] label:Creating analysis_export name:analysis_export full_name:uvm_test_top.agt_scb_fifo.analysis_export type_name:uvm_analysis_imp full_type_name:uvm_analysis_imp
+UVM_INFO /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/etc/uvm-1.2/base/uvm_component.svh(1873) @ 0: mdl_scb_fifo [SNPS_COMP_TRACE] label:Creating mdl_scb_fifo name:mdl_scb_fifo full_name:uvm_test_top.mdl_scb_fifo type_name:uvm_tlm_analysis_fifo #(T) full_type_name:uvm_tlm_analysis_fifo #(T)
+UVM_INFO /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/etc/uvm-1.2/base/uvm_resource_db.svh(121) @ 0: reporter [CFGDB/GET] Configuration 'uvm_test_top.mdl_scb_fifo.recording_detail' (type logic signed[4095:0]) read by uvm_test_top.mdl_scb_fifo = null (failed lookup)
+UVM_INFO /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/etc/uvm-1.2/base/uvm_resource_db.svh(121) @ 0: reporter [CFGDB/GET] Configuration 'uvm_test_top.mdl_scb_fifo.recording_detail' (type int) read by uvm_test_top.mdl_scb_fifo = null (failed lookup)
+UVM_INFO /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/etc/uvm-1.2/base/uvm_resource_db.svh(121) @ 0: reporter [CFGDB/GET] Configuration 'uvm_test_top.mdl_scb_fifo.put_export.recording_detail' (type logic signed[4095:0]) read by uvm_test_top.mdl_scb_fifo.put_export = null (failed lookup)
+UVM_INFO /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/etc/uvm-1.2/base/uvm_resource_db.svh(121) @ 0: reporter [CFGDB/GET] Configuration 'uvm_test_top.mdl_scb_fifo.put_export.recording_detail' (type int) read by uvm_test_top.mdl_scb_fifo.put_export = null (failed lookup)
+UVM_INFO /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/etc/uvm-1.2/base/uvm_resource_db.svh(121) @ 0: reporter [CFGDB/GET] Configuration 'uvm_test_top.mdl_scb_fifo.put_export.check_connection_relationships' (type logic signed[4095:0]) read by uvm_test_top.mdl_scb_fifo.put_export = null (failed lookup)
+UVM_INFO /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/etc/uvm-1.2/base/uvm_port_base.svh(257) @ 0: reporter [SNPS_PORT_TRACE] label:Creating put_export name:put_export full_name:uvm_test_top.mdl_scb_fifo.put_export type_name:uvm_put_imp full_type_name:uvm_put_imp
+UVM_INFO /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/etc/uvm-1.2/base/uvm_resource_db.svh(121) @ 0: reporter [CFGDB/GET] Configuration 'uvm_test_top.mdl_scb_fifo.get_peek_export.recording_detail' (type logic signed[4095:0]) read by uvm_test_top.mdl_scb_fifo.get_peek_export = null (failed lookup)
+UVM_INFO /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/etc/uvm-1.2/base/uvm_resource_db.svh(121) @ 0: reporter [CFGDB/GET] Configuration 'uvm_test_top.mdl_scb_fifo.get_peek_export.recording_detail' (type int) read by uvm_test_top.mdl_scb_fifo.get_peek_export = null (failed lookup)
+UVM_INFO /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/etc/uvm-1.2/base/uvm_resource_db.svh(121) @ 0: reporter [CFGDB/GET] Configuration 'uvm_test_top.mdl_scb_fifo.get_peek_export.check_connection_relationships' (type logic signed[4095:0]) read by uvm_test_top.mdl_scb_fifo.get_peek_export = null (failed lookup)
+UVM_INFO /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/etc/uvm-1.2/base/uvm_port_base.svh(257) @ 0: reporter [SNPS_PORT_TRACE] label:Creating get_peek_export name:get_peek_export full_name:uvm_test_top.mdl_scb_fifo.get_peek_export type_name:uvm_get_peek_imp full_type_name:uvm_get_peek_imp
+UVM_INFO /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/etc/uvm-1.2/base/uvm_resource_db.svh(121) @ 0: reporter [CFGDB/GET] Configuration 'uvm_test_top.mdl_scb_fifo.put_ap.recording_detail' (type logic signed[4095:0]) read by uvm_test_top.mdl_scb_fifo.put_ap = null (failed lookup)
+UVM_INFO /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/etc/uvm-1.2/base/uvm_resource_db.svh(121) @ 0: reporter [CFGDB/GET] Configuration 'uvm_test_top.mdl_scb_fifo.put_ap.recording_detail' (type int) read by uvm_test_top.mdl_scb_fifo.put_ap = null (failed lookup)
+UVM_INFO /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/etc/uvm-1.2/base/uvm_resource_db.svh(121) @ 0: reporter [CFGDB/GET] Configuration 'uvm_test_top.mdl_scb_fifo.put_ap.check_connection_relationships' (type logic signed[4095:0]) read by uvm_test_top.mdl_scb_fifo.put_ap = null (failed lookup)
+UVM_INFO /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/etc/uvm-1.2/base/uvm_port_base.svh(257) @ 0: reporter [SNPS_PORT_TRACE] label:Creating put_ap name:put_ap full_name:uvm_test_top.mdl_scb_fifo.put_ap type_name:uvm_analysis_port full_type_name:uvm_analysis_port
+UVM_INFO /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/etc/uvm-1.2/base/uvm_resource_db.svh(121) @ 0: reporter [CFGDB/GET] Configuration 'uvm_test_top.mdl_scb_fifo.get_ap.recording_detail' (type logic signed[4095:0]) read by uvm_test_top.mdl_scb_fifo.get_ap = null (failed lookup)
+UVM_INFO /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/etc/uvm-1.2/base/uvm_resource_db.svh(121) @ 0: reporter [CFGDB/GET] Configuration 'uvm_test_top.mdl_scb_fifo.get_ap.recording_detail' (type int) read by uvm_test_top.mdl_scb_fifo.get_ap = null (failed lookup)
+UVM_INFO /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/etc/uvm-1.2/base/uvm_resource_db.svh(121) @ 0: reporter [CFGDB/GET] Configuration 'uvm_test_top.mdl_scb_fifo.get_ap.check_connection_relationships' (type logic signed[4095:0]) read by uvm_test_top.mdl_scb_fifo.get_ap = null (failed lookup)
+UVM_INFO /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/etc/uvm-1.2/base/uvm_port_base.svh(257) @ 0: reporter [SNPS_PORT_TRACE] label:Creating get_ap name:get_ap full_name:uvm_test_top.mdl_scb_fifo.get_ap type_name:uvm_analysis_port full_type_name:uvm_analysis_port
+UVM_INFO /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/etc/uvm-1.2/base/uvm_resource_db.svh(121) @ 0: reporter [CFGDB/GET] Configuration 'uvm_test_top.mdl_scb_fifo.analysis_export.recording_detail' (type logic signed[4095:0]) read by uvm_test_top.mdl_scb_fifo.analysis_export = null (failed lookup)
+UVM_INFO /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/etc/uvm-1.2/base/uvm_resource_db.svh(121) @ 0: reporter [CFGDB/GET] Configuration 'uvm_test_top.mdl_scb_fifo.analysis_export.recording_detail' (type int) read by uvm_test_top.mdl_scb_fifo.analysis_export = null (failed lookup)
+UVM_INFO /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/etc/uvm-1.2/base/uvm_resource_db.svh(121) @ 0: reporter [CFGDB/GET] Configuration 'uvm_test_top.mdl_scb_fifo.analysis_export.check_connection_relationships' (type logic signed[4095:0]) read by uvm_test_top.mdl_scb_fifo.analysis_export = null (failed lookup)
+UVM_INFO /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/etc/uvm-1.2/base/uvm_port_base.svh(257) @ 0: reporter [SNPS_PORT_TRACE] label:Creating analysis_export name:analysis_export full_name:uvm_test_top.mdl_scb_fifo.analysis_export type_name:uvm_analysis_imp full_type_name:uvm_analysis_imp
+UVM_INFO /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/etc/uvm-1.2/base/uvm_component.svh(1873) @ 0: scoreboard [SNPS_COMP_TRACE] label:Creating scoreboard name:scoreboard full_name:uvm_test_top.scoreboard type_name:my_scoreboard full_type_name:my_scoreboard
+UVM_INFO /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/etc/uvm-1.2/base/uvm_resource_db.svh(121) @ 0: reporter [CFGDB/GET] Configuration 'uvm_test_top.scoreboard.recording_detail' (type logic signed[4095:0]) read by uvm_test_top.scoreboard = null (failed lookup)
+UVM_INFO /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/etc/uvm-1.2/base/uvm_resource_db.svh(121) @ 0: reporter [CFGDB/GET] Configuration 'uvm_test_top.scoreboard.recording_detail' (type int) read by uvm_test_top.scoreboard = null (failed lookup)
+UVM_INFO /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/etc/uvm-1.2/base/uvm_component.svh(1873) @ 0: drv [SNPS_COMP_TRACE] label:Creating drv name:drv full_name:uvm_test_top.i_agt.drv type_name:my_driver full_type_name:my_driver
+UVM_INFO /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/etc/uvm-1.2/base/uvm_resource_db.svh(121) @ 0: reporter [CFGDB/GET] Configuration 'uvm_test_top.i_agt.drv.recording_detail' (type logic signed[4095:0]) read by uvm_test_top.i_agt.drv = null (failed lookup)
+UVM_INFO /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/etc/uvm-1.2/base/uvm_resource_db.svh(121) @ 0: reporter [CFGDB/GET] Configuration 'uvm_test_top.i_agt.drv.recording_detail' (type int) read by uvm_test_top.i_agt.drv = null (failed lookup)
+UVM_INFO /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/etc/uvm-1.2/base/uvm_resource_db.svh(121) @ 0: reporter [CFGDB/GET] Configuration 'uvm_test_top.i_agt.drv.seq_item_port.recording_detail' (type logic signed[4095:0]) read by uvm_test_top.i_agt.drv.seq_item_port = null (failed lookup)
+UVM_INFO /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/etc/uvm-1.2/base/uvm_resource_db.svh(121) @ 0: reporter [CFGDB/GET] Configuration 'uvm_test_top.i_agt.drv.seq_item_port.recording_detail' (type int) read by uvm_test_top.i_agt.drv.seq_item_port = null (failed lookup)
+UVM_INFO /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/etc/uvm-1.2/base/uvm_resource_db.svh(121) @ 0: reporter [CFGDB/GET] Configuration 'uvm_test_top.i_agt.drv.seq_item_port.check_connection_relationships' (type logic signed[4095:0]) read by uvm_test_top.i_agt.drv.seq_item_port = null (failed lookup)
+UVM_INFO /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/etc/uvm-1.2/base/uvm_port_base.svh(257) @ 0: reporter [SNPS_PORT_TRACE] label:Creating seq_item_port name:seq_item_port full_name:uvm_test_top.i_agt.drv.seq_item_port type_name:uvm_seq_item_pull_port full_type_name:uvm_seq_item_pull_port
+UVM_INFO /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/etc/uvm-1.2/base/uvm_resource_db.svh(121) @ 0: reporter [CFGDB/GET] Configuration 'uvm_test_top.i_agt.drv.rsp_port.recording_detail' (type logic signed[4095:0]) read by uvm_test_top.i_agt.drv.rsp_port = null (failed lookup)
+UVM_INFO /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/etc/uvm-1.2/base/uvm_resource_db.svh(121) @ 0: reporter [CFGDB/GET] Configuration 'uvm_test_top.i_agt.drv.rsp_port.recording_detail' (type int) read by uvm_test_top.i_agt.drv.rsp_port = null (failed lookup)
+UVM_INFO /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/etc/uvm-1.2/base/uvm_resource_db.svh(121) @ 0: reporter [CFGDB/GET] Configuration 'uvm_test_top.i_agt.drv.rsp_port.check_connection_relationships' (type logic signed[4095:0]) read by uvm_test_top.i_agt.drv.rsp_port = null (failed lookup)
+UVM_INFO /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/etc/uvm-1.2/base/uvm_port_base.svh(257) @ 0: reporter [SNPS_PORT_TRACE] label:Creating rsp_port name:rsp_port full_name:uvm_test_top.i_agt.drv.rsp_port type_name:uvm_analysis_port full_type_name:uvm_analysis_port
+UVM_INFO my_driver.sv(5) @ 0: uvm_test_top.i_agt.drv [my_driver] new is called
+UVM_INFO /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/etc/uvm-1.2/base/uvm_component.svh(1873) @ 0: mon [SNPS_COMP_TRACE] label:Creating mon name:mon full_name:uvm_test_top.i_agt.mon type_name:my_monitor full_type_name:my_monitor
+UVM_INFO /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/etc/uvm-1.2/base/uvm_resource_db.svh(121) @ 0: reporter [CFGDB/GET] Configuration 'uvm_test_top.i_agt.mon.recording_detail' (type logic signed[4095:0]) read by uvm_test_top.i_agt.mon = null (failed lookup)
+UVM_INFO /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/etc/uvm-1.2/base/uvm_resource_db.svh(121) @ 0: reporter [CFGDB/GET] Configuration 'uvm_test_top.i_agt.mon.recording_detail' (type int) read by uvm_test_top.i_agt.mon = null (failed lookup)
+UVM_INFO my_driver.sv(11) @ 0: uvm_test_top.i_agt.drv [my_driver] build_phase is called
+UVM_INFO /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/etc/uvm-1.2/base/uvm_resource_db.svh(121) @ 0: reporter [CFGDB/GET] Configuration 'uvm_test_top.i_agt.drv.vif' (type virtual interface my_if) read by uvm_test_top.i_agt.drv = (virtual interface my_if) top_tb.input_if : '{clk:'h0, rst_n:'h0, data:'hxx, valid:'hx}
+UVM_INFO /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/etc/uvm-1.2/base/uvm_resource_db.svh(121) @ 0: reporter [CFGDB/GET] Configuration 'uvm_test_top.i_agt.mon.vif' (type virtual interface my_if) read by uvm_test_top.i_agt.mon = (virtual interface my_if) top_tb.input_if : '{clk:'h0, rst_n:'h0, data:'hxx, valid:'hx}
+UVM_INFO /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/etc/uvm-1.2/base/uvm_resource_db.svh(121) @ 0: reporter [CFGDB/GET] Configuration 'uvm_test_top.i_agt.mon.ap.recording_detail' (type logic signed[4095:0]) read by uvm_test_top.i_agt.mon.ap = null (failed lookup)
+UVM_INFO /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/etc/uvm-1.2/base/uvm_resource_db.svh(121) @ 0: reporter [CFGDB/GET] Configuration 'uvm_test_top.i_agt.mon.ap.recording_detail' (type int) read by uvm_test_top.i_agt.mon.ap = null (failed lookup)
+UVM_INFO /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/etc/uvm-1.2/base/uvm_resource_db.svh(121) @ 0: reporter [CFGDB/GET] Configuration 'uvm_test_top.i_agt.mon.ap.check_connection_relationships' (type logic signed[4095:0]) read by uvm_test_top.i_agt.mon.ap = null (failed lookup)
+UVM_INFO /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/etc/uvm-1.2/base/uvm_port_base.svh(257) @ 0: reporter [SNPS_PORT_TRACE] label:Creating ap name:ap full_name:uvm_test_top.i_agt.mon.ap type_name:uvm_analysis_port full_type_name:uvm_analysis_port
+UVM_INFO /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/etc/uvm-1.2/base/uvm_resource_db.svh(121) @ 0: reporter [CFGDB/GET] Configuration 'uvm_test_top.model.port.recording_detail' (type logic signed[4095:0]) read by uvm_test_top.model.port = null (failed lookup)
+UVM_INFO /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/etc/uvm-1.2/base/uvm_resource_db.svh(121) @ 0: reporter [CFGDB/GET] Configuration 'uvm_test_top.model.port.recording_detail' (type int) read by uvm_test_top.model.port = null (failed lookup)
+UVM_INFO /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/etc/uvm-1.2/base/uvm_resource_db.svh(121) @ 0: reporter [CFGDB/GET] Configuration 'uvm_test_top.model.port.check_connection_relationships' (type logic signed[4095:0]) read by uvm_test_top.model.port = null (failed lookup)
+UVM_INFO /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/etc/uvm-1.2/base/uvm_port_base.svh(257) @ 0: reporter [SNPS_PORT_TRACE] label:Creating port name:port full_name:uvm_test_top.model.port type_name:uvm_blocking_get_port full_type_name:uvm_blocking_get_port
+UVM_INFO /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/etc/uvm-1.2/base/uvm_resource_db.svh(121) @ 0: reporter [CFGDB/GET] Configuration 'uvm_test_top.model.ap.recording_detail' (type logic signed[4095:0]) read by uvm_test_top.model.ap = null (failed lookup)
+UVM_INFO /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/etc/uvm-1.2/base/uvm_resource_db.svh(121) @ 0: reporter [CFGDB/GET] Configuration 'uvm_test_top.model.ap.recording_detail' (type int) read by uvm_test_top.model.ap = null (failed lookup)
+UVM_INFO /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/etc/uvm-1.2/base/uvm_resource_db.svh(121) @ 0: reporter [CFGDB/GET] Configuration 'uvm_test_top.model.ap.check_connection_relationships' (type logic signed[4095:0]) read by uvm_test_top.model.ap = null (failed lookup)
+UVM_INFO /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/etc/uvm-1.2/base/uvm_port_base.svh(257) @ 0: reporter [SNPS_PORT_TRACE] label:Creating ap name:ap full_name:uvm_test_top.model.ap type_name:uvm_analysis_port full_type_name:uvm_analysis_port
+UVM_INFO /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/etc/uvm-1.2/base/uvm_component.svh(1873) @ 0: mon [SNPS_COMP_TRACE] label:Creating mon name:mon full_name:uvm_test_top.o_agt.mon type_name:my_monitor full_type_name:my_monitor
+UVM_INFO /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/etc/uvm-1.2/base/uvm_resource_db.svh(121) @ 0: reporter [CFGDB/GET] Configuration 'uvm_test_top.o_agt.mon.recording_detail' (type logic signed[4095:0]) read by uvm_test_top.o_agt.mon = null (failed lookup)
+UVM_INFO /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/etc/uvm-1.2/base/uvm_resource_db.svh(121) @ 0: reporter [CFGDB/GET] Configuration 'uvm_test_top.o_agt.mon.recording_detail' (type int) read by uvm_test_top.o_agt.mon = null (failed lookup)
+UVM_INFO /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/etc/uvm-1.2/base/uvm_resource_db.svh(121) @ 0: reporter [CFGDB/GET] Configuration 'uvm_test_top.o_agt.mon.vif' (type virtual interface my_if) read by uvm_test_top.o_agt.mon = (virtual interface my_if) top_tb.output_if : '{clk:'h0, rst_n:'h0, data:'hxx, valid:'hx}
+UVM_INFO /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/etc/uvm-1.2/base/uvm_resource_db.svh(121) @ 0: reporter [CFGDB/GET] Configuration 'uvm_test_top.o_agt.mon.ap.recording_detail' (type logic signed[4095:0]) read by uvm_test_top.o_agt.mon.ap = null (failed lookup)
+UVM_INFO /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/etc/uvm-1.2/base/uvm_resource_db.svh(121) @ 0: reporter [CFGDB/GET] Configuration 'uvm_test_top.o_agt.mon.ap.recording_detail' (type int) read by uvm_test_top.o_agt.mon.ap = null (failed lookup)
+UVM_INFO /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/etc/uvm-1.2/base/uvm_resource_db.svh(121) @ 0: reporter [CFGDB/GET] Configuration 'uvm_test_top.o_agt.mon.ap.check_connection_relationships' (type logic signed[4095:0]) read by uvm_test_top.o_agt.mon.ap = null (failed lookup)
+UVM_INFO /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/etc/uvm-1.2/base/uvm_port_base.svh(257) @ 0: reporter [SNPS_PORT_TRACE] label:Creating ap name:ap full_name:uvm_test_top.o_agt.mon.ap type_name:uvm_analysis_port full_type_name:uvm_analysis_port
+UVM_INFO /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/etc/uvm-1.2/base/uvm_resource_db.svh(121) @ 0: reporter [CFGDB/GET] Configuration 'uvm_test_top.scoreboard.exp_port.recording_detail' (type logic signed[4095:0]) read by uvm_test_top.scoreboard.exp_port = null (failed lookup)
+UVM_INFO /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/etc/uvm-1.2/base/uvm_resource_db.svh(121) @ 0: reporter [CFGDB/GET] Configuration 'uvm_test_top.scoreboard.exp_port.recording_detail' (type int) read by uvm_test_top.scoreboard.exp_port = null (failed lookup)
+UVM_INFO /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/etc/uvm-1.2/base/uvm_resource_db.svh(121) @ 0: reporter [CFGDB/GET] Configuration 'uvm_test_top.scoreboard.exp_port.check_connection_relationships' (type logic signed[4095:0]) read by uvm_test_top.scoreboard.exp_port = null (failed lookup)
+UVM_INFO /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/etc/uvm-1.2/base/uvm_port_base.svh(257) @ 0: reporter [SNPS_PORT_TRACE] label:Creating exp_port name:exp_port full_name:uvm_test_top.scoreboard.exp_port type_name:uvm_blocking_get_port full_type_name:uvm_blocking_get_port
+UVM_INFO /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/etc/uvm-1.2/base/uvm_resource_db.svh(121) @ 0: reporter [CFGDB/GET] Configuration 'uvm_test_top.scoreboard.act_port.recording_detail' (type logic signed[4095:0]) read by uvm_test_top.scoreboard.act_port = null (failed lookup)
+UVM_INFO /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/etc/uvm-1.2/base/uvm_resource_db.svh(121) @ 0: reporter [CFGDB/GET] Configuration 'uvm_test_top.scoreboard.act_port.recording_detail' (type int) read by uvm_test_top.scoreboard.act_port = null (failed lookup)
+UVM_INFO /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/etc/uvm-1.2/base/uvm_resource_db.svh(121) @ 0: reporter [CFGDB/GET] Configuration 'uvm_test_top.scoreboard.act_port.check_connection_relationships' (type logic signed[4095:0]) read by uvm_test_top.scoreboard.act_port = null (failed lookup)
+UVM_INFO /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/etc/uvm-1.2/base/uvm_port_base.svh(257) @ 0: reporter [SNPS_PORT_TRACE] label:Creating act_port name:act_port full_name:uvm_test_top.scoreboard.act_port type_name:uvm_blocking_get_port full_type_name:uvm_blocking_get_port
 UVM_INFO /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/etc/uvm-1.2/base/uvm_phase.svh(1626) @ 0: reporter [PH/TRC/DONE] Phase 'common.build' (id=191) Completed phase
 UVM_INFO /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/etc/uvm-1.2/base/uvm_phase.svh(1661) @ 0: reporter [PH/TRC/SCHEDULED] Phase 'common.connect' (id=194) Scheduled from phase common.build
 UVM_INFO /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/etc/uvm-1.2/base/uvm_phase.svh(1351) @ 0: reporter [PH/TRC/STRT] Phase 'common.connect' (id=194) Starting phase
+UVM_INFO /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/etc/uvm-1.2/base/uvm_port_base.svh(513) @ 0: reporter [SNPS_PORT_CONN_TRACE] label:Connecting ap with analysis_export caller_name:uvm_test_top.i_agt.mon.ap provider_name:uvm_test_top.agt_mdl_fifo.analysis_export
+UVM_INFO /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/etc/uvm-1.2/base/uvm_port_base.svh(513) @ 0: reporter [SNPS_PORT_CONN_TRACE] label:Connecting port with get_peek_export caller_name:uvm_test_top.model.port provider_name:uvm_test_top.agt_mdl_fifo.get_peek_export
+UVM_INFO /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/etc/uvm-1.2/base/uvm_port_base.svh(513) @ 0: reporter [SNPS_PORT_CONN_TRACE] label:Connecting ap with analysis_export caller_name:uvm_test_top.o_agt.mon.ap provider_name:uvm_test_top.agt_scb_fifo.analysis_export
+UVM_INFO /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/etc/uvm-1.2/base/uvm_port_base.svh(513) @ 0: reporter [SNPS_PORT_CONN_TRACE] label:Connecting act_port with get_peek_export caller_name:uvm_test_top.scoreboard.act_port provider_name:uvm_test_top.agt_scb_fifo.get_peek_export
+UVM_INFO /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/etc/uvm-1.2/base/uvm_port_base.svh(513) @ 0: reporter [SNPS_PORT_CONN_TRACE] label:Connecting ap with analysis_export caller_name:uvm_test_top.model.ap provider_name:uvm_test_top.mdl_scb_fifo.analysis_export
+UVM_INFO /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/etc/uvm-1.2/base/uvm_port_base.svh(513) @ 0: reporter [SNPS_PORT_CONN_TRACE] label:Connecting exp_port with get_peek_export caller_name:uvm_test_top.scoreboard.exp_port provider_name:uvm_test_top.mdl_scb_fifo.get_peek_export
 UVM_INFO /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/etc/uvm-1.2/base/uvm_phase.svh(1626) @ 0: reporter [PH/TRC/DONE] Phase 'common.connect' (id=194) Completed phase
 UVM_INFO /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/etc/uvm-1.2/base/uvm_phase.svh(1661) @ 0: reporter [PH/TRC/SCHEDULED] Phase 'common.end_of_elaboration' (id=197) Scheduled from phase common.connect
 UVM_INFO /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/etc/uvm-1.2/base/uvm_phase.svh(1351) @ 0: reporter [PH/TRC/STRT] Phase 'common.end_of_elaboration' (id=197) Starting phase
@@ -114,20 +234,59 @@ UVM_INFO /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2
 UVM_INFO /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/etc/uvm-1.2/base/uvm_phase.svh(1626) @ 0: reporter [PH/TRC/DONE] Phase 'uvm.uvm_sched.pre_main' (id=282) Completed phase
 UVM_INFO /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/etc/uvm-1.2/base/uvm_phase.svh(1661) @ 0: reporter [PH/TRC/SCHEDULED] Phase 'uvm.uvm_sched.main' (id=291) Scheduled from phase uvm.uvm_sched.pre_main
 UVM_INFO /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/etc/uvm-1.2/base/uvm_phase.svh(1351) @ 0: reporter [PH/TRC/STRT] Phase 'uvm.uvm_sched.main' (id=291) Starting phase
-UVM_INFO @ 0: main_objection [OBJTN_TRC] Object uvm_test_top.drv raised 1 objection(s): count=1  total=1
-UVM_INFO @ 0: main_objection [OBJTN_TRC] Object uvm_test_top added 1 objection(s) to its total (raised from source object uvm_test_top.drv): count=0  total=1
-UVM_INFO @ 0: main_objection [OBJTN_TRC] Object uvm_top added 1 objection(s) to its total (raised from source object uvm_test_top.drv): count=0  total=1
-UVM_INFO my_driver.sv(21) @ 0: uvm_test_top.drv [my_driver] main_phase is called
-UVM_INFO my_driver.sv(49) @ 1100000: uvm_test_top.drv [my_driver] begin to drive one pkt
-UVM_INFO my_driver.sv(58) @ 3900000: uvm_test_top.drv [my_driver] end drive one pkt
-UVM_INFO my_driver.sv(49) @ 3900000: uvm_test_top.drv [my_driver] begin to drive one pkt
-UVM_INFO my_driver.sv(58) @ 6700000: uvm_test_top.drv [my_driver] end drive one pkt
-UVM_INFO @ 7700000: main_objection [OBJTN_TRC] Object uvm_test_top.drv dropped 1 objection(s): count=0  total=0
-UVM_INFO @ 7700000: main_objection [OBJTN_TRC] Object uvm_test_top.drv all_dropped 1 objection(s): count=0  total=0
-UVM_INFO @ 7700000: main_objection [OBJTN_TRC] Object uvm_test_top subtracted 1 objection(s) from its total (dropped from source object uvm_test_top.drv): count=0  total=0
-UVM_INFO @ 7700000: main_objection [OBJTN_TRC] Object uvm_test_top subtracted 1 objection(s) from its total (all_dropped from source object uvm_test_top.drv): count=0  total=0
-UVM_INFO @ 7700000: main_objection [OBJTN_TRC] Object uvm_top subtracted 1 objection(s) from its total (dropped from source object uvm_test_top.drv): count=0  total=0
-UVM_INFO @ 7700000: main_objection [OBJTN_TRC] Object uvm_top subtracted 1 objection(s) from its total (all_dropped from source object uvm_test_top.drv): count=0  total=0
+UVM_INFO @ 0: main_objection [OBJTN_TRC] Object uvm_test_top.i_agt.drv raised 1 objection(s): count=1  total=1
+UVM_INFO @ 0: main_objection [OBJTN_TRC] Object uvm_test_top.i_agt added 1 objection(s) to its total (raised from source object ): count=0  total=1
+UVM_INFO @ 0: main_objection [OBJTN_TRC] Object uvm_test_top added 1 objection(s) to its total (raised from source object uvm_test_top.i_agt.drv): count=0  total=1
+UVM_INFO @ 0: main_objection [OBJTN_TRC] Object uvm_top added 1 objection(s) to its total (raised from source object uvm_test_top.i_agt.drv): count=0  total=1
+UVM_INFO my_driver.sv(21) @ 0: uvm_test_top.i_agt.drv [my_driver] main_phase is called
+UVM_INFO my_driver.sv(49) @ 1100000: uvm_test_top.i_agt.drv [my_driver] begin to drive one pkt
+UVM_INFO my_monitor.sv(37) @ 2100000: uvm_test_top.i_agt.mon [my_monitor] begin to collect one pkt
+UVM_INFO my_monitor.sv(37) @ 2300000: uvm_test_top.o_agt.mon [my_monitor] begin to collect one pkt
+UVM_INFO my_driver.sv(58) @ 3900000: uvm_test_top.i_agt.drv [my_driver] end drive one pkt
+UVM_INFO my_driver.sv(49) @ 3900000: uvm_test_top.i_agt.drv [my_driver] begin to drive one pkt
+UVM_INFO my_monitor.sv(50) @ 4100000: uvm_test_top.i_agt.mon [my_monitor] end collect one pkt, print it :
+dmac = e7095fce0b3f
+smac = 0
+ether_type = 0
+crc = 0
+UVM_INFO my_model.sv(29) @ 4100000: uvm_test_top.model [my_model] get one transcation, copy and print it:
+dmac = e7095fce0b3f
+smac = 0
+ether_type = 0
+crc = 0
+UVM_INFO my_monitor.sv(50) @ 4300000: uvm_test_top.o_agt.mon [my_monitor] end collect one pkt, print it :
+dmac = e7095fce0b3f
+smac = 0
+ether_type = 0
+crc = 0
+UVM_INFO my_scoreboard.sv(36) @ 4300000: uvm_test_top.scoreboard [my_scoreboard] Compare SUCCESSFULLY
+UVM_INFO my_monitor.sv(37) @ 4900000: uvm_test_top.i_agt.mon [my_monitor] begin to collect one pkt
+UVM_INFO my_monitor.sv(37) @ 5100000: uvm_test_top.o_agt.mon [my_monitor] begin to collect one pkt
+UVM_INFO my_driver.sv(58) @ 6700000: uvm_test_top.i_agt.drv [my_driver] end drive one pkt
+UVM_INFO my_monitor.sv(50) @ 6900000: uvm_test_top.i_agt.mon [my_monitor] end collect one pkt, print it :
+dmac = 787df3c25216
+smac = 0
+ether_type = 0
+crc = 0
+UVM_INFO my_model.sv(29) @ 6900000: uvm_test_top.model [my_model] get one transcation, copy and print it:
+dmac = 787df3c25216
+smac = 0
+ether_type = 0
+crc = 0
+UVM_INFO my_monitor.sv(50) @ 7100000: uvm_test_top.o_agt.mon [my_monitor] end collect one pkt, print it :
+dmac = 787df3c25216
+smac = 0
+ether_type = 0
+crc = 0
+UVM_INFO my_scoreboard.sv(36) @ 7100000: uvm_test_top.scoreboard [my_scoreboard] Compare SUCCESSFULLY
+UVM_INFO @ 7700000: main_objection [OBJTN_TRC] Object uvm_test_top.i_agt.drv dropped 1 objection(s): count=0  total=0
+UVM_INFO @ 7700000: main_objection [OBJTN_TRC] Object uvm_test_top.i_agt.drv all_dropped 1 objection(s): count=0  total=0
+UVM_INFO @ 7700000: main_objection [OBJTN_TRC] Object uvm_test_top.i_agt subtracted 1 objection(s) from its total (dropped from source object ): count=0  total=0
+UVM_INFO @ 7700000: main_objection [OBJTN_TRC] Object uvm_test_top.i_agt subtracted 1 objection(s) from its total (all_dropped from source object ): count=0  total=0
+UVM_INFO @ 7700000: main_objection [OBJTN_TRC] Object uvm_test_top subtracted 1 objection(s) from its total (dropped from source object uvm_test_top.i_agt.drv): count=0  total=0
+UVM_INFO @ 7700000: main_objection [OBJTN_TRC] Object uvm_test_top subtracted 1 objection(s) from its total (all_dropped from source object uvm_test_top.i_agt.drv): count=0  total=0
+UVM_INFO @ 7700000: main_objection [OBJTN_TRC] Object uvm_top subtracted 1 objection(s) from its total (dropped from source object uvm_test_top.i_agt.drv): count=0  total=0
+UVM_INFO @ 7700000: main_objection [OBJTN_TRC] Object uvm_top subtracted 1 objection(s) from its total (all_dropped from source object uvm_test_top.i_agt.drv): count=0  total=0
 UVM_INFO /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/etc/uvm-1.2/base/uvm_phase.svh(1626) @ 7700000: reporter [PH/TRC/DONE] Phase 'uvm.uvm_sched.main' (id=291) Completed phase
 UVM_INFO /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/etc/uvm-1.2/base/uvm_phase.svh(1661) @ 7700000: reporter [PH/TRC/SCHEDULED] Phase 'uvm.uvm_sched.post_main' (id=300) Scheduled from phase uvm.uvm_sched.main
 UVM_INFO /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/etc/uvm-1.2/base/uvm_phase.svh(1351) @ 7700000: reporter [PH/TRC/STRT] Phase 'uvm.uvm_sched.post_main' (id=300) Starting phase
@@ -182,28 +341,32 @@ UVM_INFO /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2
 --- UVM Report Summary ---
 
 ** Report counts by severity
-UVM_INFO :  127
+UVM_INFO :  263
 UVM_WARNING :    0
 UVM_ERROR :    0
 UVM_FATAL :    0
 ** Report counts by id
-[CFGDB/GET]    11
-[CFGDB/SET]     1
-[OBJTN_TRC]     9
+[CFGDB/GET]    94
+[CFGDB/SET]     3
+[OBJTN_TRC]    12
 [PH/TRC/DONE]    27
 [PH/TRC/SCHEDULED]    26
 [PH/TRC/SKIP]    12
 [PH/TRC/STRT]    27
 [RNTST]     1
-[SNPS_COMP_TRACE]     2
-[SNPS_PORT_TRACE]     2
+[SNPS_COMP_TRACE]    11
+[SNPS_PORT_CONN_TRACE]     6
+[SNPS_PORT_TRACE]    23
 [UVM/RELNOTES]     1
 [UVM/REPORT/CATCHER]     1
 [my_driver]     7
+[my_model]     2
+[my_monitor]     8
+[my_scoreboard]     2
 
 $finish called from file "/afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/etc/uvm-1.2/base/uvm_root.svh", line 527.
 $finish at simulation time              7700000
            V C S   S i m u l a t i o n   R e p o r t 
 Time: 7700000 ps
-CPU Time:      0.810 seconds;       Data structure size:   0.5Mb
-Thu Apr 24 00:23:20 2025
+CPU Time:      0.970 seconds;       Data structure size:   0.5Mb
+Sat May  3 20:15:19 2025
