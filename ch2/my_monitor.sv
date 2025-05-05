@@ -27,8 +27,11 @@ task my_monitor::main_phase(uvm_phase phase);
 endtask
 
 task my_monitor::collect_one_pkt(my_transaction tr);
-    bit [7:0] data_q[$];
-    int psize;
+    byte unsigned data_q[$];
+    byte unsigned data_array[];
+    logic [7:0] data;
+    logic valid = 0;
+    int data_size;
     while(1) begin  
         @(posedge vif.clk)
         if(vif.valid) break;
@@ -39,14 +42,12 @@ task my_monitor::collect_one_pkt(my_transaction tr);
         data_q.push_back(vif.data);
         @(posedge vif.clk);
     end
-
-    for(int i = 0; i < 6; i++) begin
-        tr.dmac = {tr.dmac[39:0], data_q.pop_front()};
+    data_size = data_q.size();
+    data_array = new[data_size];
+    for(int i = 0; i < data_size; i++) begin
+        data_array[i] = data_q[i];
     end
-
-    for(int i = 0; i < 4; i++) begin
-        tr.crc = {tr.crc[23:0], data_q.pop_front()};
-    end
+    tr.pload = new[data_size - 18];
+    data_size = tr.unpack_bytes(data_array) / 8;
     `uvm_info("my_monitor", "end collect one pkt, print it :", UVM_LOW);
-     tr.my_print();
 endtask

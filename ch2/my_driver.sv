@@ -1,4 +1,4 @@
-class my_driver extends uvm_driver;
+class my_driver extends uvm_driver #(my_transaction);
   `uvm_component_utils(my_driver)
   function new(string name = "my_driver", uvm_component parent = null);
     super.new(name, parent);
@@ -16,42 +16,32 @@ class my_driver extends uvm_driver;
 endclass
 
 task my_driver::main_phase(uvm_phase phase);
-  my_transaction tr;
-  phase.raise_objection(this);
-  `uvm_info("my_driver", "main_phase is called", UVM_LOW);
   vif.data <= 8'd0;
   vif.valid <= 1'b0;
   while(!vif.rst_n)
     @(posedge vif.clk);
-  for(int i = 0; i < 2; i++) begin
-     tr = new("tr");
-     assert(tr.randomize() with {pload.size == 200;});
-     drive_one_pkt(tr);
+  while(1) begin
+     seq_item_port.try_next_item(req);
+      if(req == null)
+          @(posedge vif.clk);
+      else begin
+          drive_one_pkt(req);
+          seq_item_port.item_done(); //handshake mechanism
+      end
   end
-   repeat(5) @(posedge vif.clk);
-   vif.valid <= 1'b0;
-   phase.drop_objection(this);
 endtask
 
 task my_driver::drive_one_pkt(my_transaction tr);
-  bit [47:0] temp_data;
-  bit [7:0] data_q[$];
-  temp_data = tr.dmac;
-  for(int i = 0; i < 6; i++) begin
-      data_q.push_back(temp_data[7:0]);
-      temp_data = temp_data >> 8;
-  end
-  temp_data = tr.crc;
-  for(int i = 0; i < 4; i++) begin
-      data_q.push_back(temp_data[7:0]);
-      temp_data = temp_data >> 8;
-  end
+  byte unsigned data_q[];
+  int data_size;
+
+  data_size = tr.pack_bytes(data_q) / 8;
   `uvm_info("my_driver", "begin to drive one pkt", UVM_LOW);
    repeat(3) @(posedge vif.clk);
-   while(data_q.size() > 0) begin
+   for(int i = 0; i < data_size; i++) begin
       @(posedge vif.clk);
       vif.valid <= 1'b1;
-      vif.data <= data_q.pop_front();
+      vif.data <= data_q[i];
    end
    @(posedge vif.clk);
    vif.valid <= 1'b0;

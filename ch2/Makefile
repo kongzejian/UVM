@@ -19,3 +19,5 @@ clean:
 	rm -rf *.key
 	rm -rf *.fsdb
 	rm -rf verdiLog
+	rm -rf output.txt
+	rm -rf verdi_config_file

@@ -21,7 +21,6 @@ class my_env extends uvm_env;
         agt_scb_fifo = new("agt_scb_fifo", this); //dut to scoreboard
         mdl_scb_fifo = new("mdl_scb_fifo", this); //reference model to scoreboard
         scb = my_scoreboard::type_id::create("scoreboard", this);
-
     endfunction
 
     function void connect_phase(uvm_phase phase);
