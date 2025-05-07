@@ -42,10 +42,10 @@ class my_transaction extends uvm_sequence_item;
       `uvm_field_int(dmac, UVM_ALL_ON)
       `uvm_field_int(smac, UVM_ALL_ON)
        if(is_vlan) begin
-            uvm_field_int(vlan_info1, UVM_ALL_ON)
-            uvm_field_int(vlan_info2, UVM_ALL_ON)
-            uvm_field_int(vlan_info3, UVM_ALL_ON)
-            uvm_field_int(vlan_info4, UVM_ALL_ON)
+            `uvm_field_int(vlan_info1, UVM_ALL_ON)
+            `uvm_field_int(vlan_info2, UVM_ALL_ON)
+            `uvm_field_int(vlan_info3, UVM_ALL_ON)
+            `uvm_field_int(vlan_info4, UVM_ALL_ON)
        end
       `uvm_field_int(ether_type, UVM_ALL_ON)
       `uvm_field_array_int(pload, UVM_ALL_ON)

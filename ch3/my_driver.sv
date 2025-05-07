@@ -1,13 +1,20 @@
 class my_driver extends uvm_driver #(my_transaction);
-  `uvm_component_utils(my_driver)
+  int pre_num;
+  `uvm_component_utils_begin(my_driver)
+      `uvm_field_int(pre_num, UVM_ALL_ON)
+  `uvm_component_utils_end
   function new(string name = "my_driver", uvm_component parent = null);
     super.new(name, parent);
+    pre_num = 3;
     `uvm_info("my_driver", "new is called", UVM_LOW);
   endfunction
   extern virtual task main_phase(uvm_phase phase);
   extern virtual task drive_one_pkt(my_transaction tr);
   virtual function void build_phase(uvm_phase phase);
+      `uvm_info("my_driver", $sformatf("before super.build_phase, the pre_num is %0d", pre_num), UVM_LOW)
       super.build_phase(phase);
+      `uvm_info("my_driver", $sformatf("after super.build_phase, the pre_num is %0d", pre_num), UVM_LOW) 
+      //$display("%s", get_full_name());
       `uvm_info("my_driver", "build_phase is called", UVM_LOW);
       if(~uvm_config_db # (virtual my_if)::get(this, "", "vif", vif))
         `uvm_fatal("my_driver", "virtual interface must be set for vif!!")
